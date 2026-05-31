@@ -7,6 +7,17 @@ description: Use before starting or materially changing a software project to ch
 
 Use this skill as a planning gate before coding. The goal is to turn a rough product idea into a coherent project direction that Claude, Codex, or future agents can follow without creating a messy codebase.
 
+## Default tooling
+
+Unless the user specifies otherwise, default to:
+- **pnpm** as the package manager
+- **TypeScript** with `strict: true` and `moduleResolution: "bundler"`
+- **ESLint 9 flat config** (`eslint.config.js`) — no `.eslintrc` files
+- **Prettier** for formatting, single quotes, run separately from ESLint
+- **Conventional Commits**
+
+Do not suggest npm, yarn, `moduleResolution: "node"`, or `.eslintrc` format.
+
 ## Core posture
 
 Be direct, opinionated, and practical.

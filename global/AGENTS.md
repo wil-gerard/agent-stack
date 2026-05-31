@@ -1,8 +1,3 @@
-# Global Agent Instructions
-
-These rules are intentionally short because global files are loaded into every
-session.
-
 ## Defaults
 
 - Never run `git revert`, `git restore`, `git reset --hard`, or other destructive Git commands without explicit permission.
@@ -19,3 +14,9 @@ session.
 - Use imperative present tense.
 - Keep the subject concise, ideally 72 characters or less.
 - Use these types when applicable: `feat`, `fix`, `docs`, `style`, `refactor`, `perf`, `test`, `build`, `ci`, `chore`, `revert`.
+
+## Tooling defaults
+
+- Package manager: **pnpm**. Never use `npm install` or `yarn`.
+- When setting up ESLint from scratch: use flat config (`eslint.config.js`), not `.eslintrc`.
+- Run Prettier separately — never configure it as an ESLint rule.

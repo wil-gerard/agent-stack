@@ -1,7 +1,3 @@
-# Agent Project Rules
-
-Use this as the base for `CLAUDE.md` or `AGENTS.md` after project decisions are made.
-
 ## Project goal
 
 [Describe the app in one paragraph.]
@@ -19,6 +15,13 @@ Use this as the base for `CLAUDE.md` or `AGENTS.md` after project decisions are 
 - Styling:
 - Validation:
 - Testing:
+
+## Tooling
+
+- Package manager: pnpm
+- TypeScript: strict, moduleResolution bundler
+- Linting: ESLint 9 flat config (`eslint.config.js`)
+- Commits: Conventional Commits
 
 ## Architecture decisions
 
@@ -72,7 +75,7 @@ Use this as the base for `CLAUDE.md` or `AGENTS.md` after project decisions are 
 
 ## Testing and quality
 
-- Run `[lint command]` before committing.
+- Run `pnpm lint` before committing.
 - Run `[test command]` after changing business logic.
 - Add tests for validation, access control, and core domain logic.
 
